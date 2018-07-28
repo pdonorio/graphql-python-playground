@@ -1,0 +1,5 @@
+requests
+git+https://github.com/rapydo/utils.git@0.6.2
+ipython
+graphene
+#jupyter

@@ -1,0 +1,18 @@
+version: '3.6'
+services:
+  app:
+    build:
+      context: ./build
+      args:
+        # CURRENT_UID: ${CURRENT_UID}
+        # PYTHON_VERSION: ${PYTHON_VERSION}
+        # ALPINE_VERSION: ${ALPINE_VERSION}
+        IMAGE_VERSION: python:${PYTHON_VERSION}-alpine${ALPINE_VERSION}
+    image: playground/mytest:0.1
+    # environments:
+    #   KEY: ${KEY}
+    #   SECRET: ${SECRET}
+    # command: sleep 1234567890
+    # command: /bin/sh -c 'sleep 1234567890'
+    volumes:
+      - ./src:/app
